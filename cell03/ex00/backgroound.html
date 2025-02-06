@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="backgroound.css">
+    </head>
+    <body>
+        <button type="button" onclick="changeColor()">Button</button>
+        <script>
+            function changeColor() {
+                let num_r = Math.random() * 255
+                let num_g = Math.random() * 255
+                let num_b = Math.random() * 255
+                document.body.style.backgroundColor = "rgb("+num_r+","+num_g+","+num_b+")";
+            }
+        </script>
+    </body>
+</html>

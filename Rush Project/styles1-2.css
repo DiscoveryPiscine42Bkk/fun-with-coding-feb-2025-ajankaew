@@ -1,0 +1,176 @@
+#home {
+    background: url('https://i.postimg.cc/52Yg5y14/1.jpg') no-repeat center center/cover;
+    height: 100vh; /* ให้ section มีความสูงเท่ากับ viewport */
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    color: rgb(255, 202, 45); /* กำหนดสีข้อความให้ตัดกับพื้นหลัง */
+}
+
+#home h1 {
+    font-size: 3rem; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้น */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาเพื่อให้อ่านง่าย */
+}
+
+#home p {
+    font-size: 1.3rem;
+    max-width: 600px; /* จำกัดความกว้างของข้อความ */
+    margin: 10px auto;
+    color: rgb(228, 141, 53); /* กำหนดสีข้อความให้ตัดกับพื้นหลัง */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar-nav {
+    display: flex; /* จัดเรียงเมนูให้เป็นแนวนอน */
+    justify-content: flex-end; /* จัดให้อยู่ทางขวา */
+    gap: 15px; /* เพิ่มระยะห่างระหว่างเมนู */
+    list-style: none; /* ลบจุดของรายการ */
+    padding: 0;
+    margin: 0;
+    position: fixed; /* ทำให้แถบ Nav Bar อยู่ที่ด้านบนตลอด */
+    top: 0;
+    left: 0;
+    width: 100%; /* ขยายความกว้างให้เต็มหน้าจอ */
+    z-index: 1000; /* ให้แน่ใจว่าแถบ Nav Bar อยู่ด้านหน้า */
+    background-color: rgba(0, 0, 0, 0.8); /* ให้พื้นหลังของ navbar เป็นสีโปร่งแสง */
+    padding: 10px 0; /* เพิ่มช่องว่างบนและล่าง */
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    color: rgb(226, 177, 15);
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 15px;
+}
+
+.container {
+    max-width: 600px; /* กำหนดขนาดให้เนื้อหาอยู่ตรงกลาง */
+    margin: auto;
+}
+
+.rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* ครอบภาพให้พอดีกับขนาด */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    border: 5px solid #156ecd; /* เพิ่มขอบสีทอง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+/* Contact Section */
+#contact a {
+    text-decoration: none;
+    color: #f3c848;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #f8b400;
+}
+
+#about {
+    background-color: #C3EEFA; 
+}
+
+#skills {
+    background-color: #C8E6B2; 
+}
+
+#contact {
+    background-color: #FEE7AA; 
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li, p, h2, h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+p {
+    font-size: 18px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* คอลัมน์ปรับขนาดอัตโนมัติ */
+    gap: 20px; /* ระยะห่างระหว่างรูป */
+    justify-items: center; /* จัดให้อยู่กึ่งกลาง */
+    padding: 20px;
+}
+
+.certificate-container img {
+    width: 100%; /* ให้ภาพปรับขนาดตามกริด */
+    max-width: 320px; /* จำกัดความกว้างสูงสุด */
+    height: auto;
+    border-radius: 10px; /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+}
